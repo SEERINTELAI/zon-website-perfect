@@ -17,7 +17,7 @@ const ZONEnergy: React.FC = () => {
     {
       icon: <TrendingUp className="w-8 h-8 text-[#FF6826]" />,
       title: "Energy Reduction",
-      value: "35%+",
+      value: "20%+",
       description: "Dramatically reduce energy consumption while maintaining peak performance"
     },
     {
@@ -132,7 +132,7 @@ const ZONEnergy: React.FC = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-[#010214]/70 to-[#FF6826]/35 p-8 rounded-2xl border border-[#FF6826]/30 text-center">
-                <div className="text-5xl font-bold text-[#FF6826] mb-2">35%+</div>
+                <div className="text-5xl font-bold text-[#FF6826] mb-2">20%+</div>
                 <div className="text-xl font-semibold text-white mb-2">Energy Cost Reduction</div>
                 <div className="text-gray-300">Direct savings on your monthly energy bills</div>
               </div>
@@ -153,7 +153,7 @@ const ZONEnergy: React.FC = () => {
           <div className="text-center bg-gradient-to-r from-[#010214]/70 to-[#CB2F19]/35 p-12 rounded-2xl border border-[#CB2F19]/30">
             <h2 className="text-3xl font-bold mb-4">Ready to Optimize Your Energy Usage?</h2>
             <p className="text-xl text-[#EFE6D4]/80 mb-8 max-w-3xl mx-auto">
-              Join industry leaders who trust ZON Energy to reduce their energy consumption by 35%+ while maintaining peak performance.
+              Join industry leaders who trust ZON Energy to reduce their energy consumption by 20%+ while maintaining peak performance.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link 

@@ -34,7 +34,7 @@ export const Hero: React.FC = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Revolutionary AI-driven solutions that reduce energy consumption by <span className="text-blue-400 font-semibold">35%+</span>, 
+            Revolutionary AI-driven solutions that reduce energy consumption by <span className="text-blue-400 font-semibold">20%+</span>, 
             cut operating costs by <span className="text-purple-400 font-semibold">50%+</span>, and increase capacity by <span className="text-green-400 font-semibold">40%</span>
           </p>
 
@@ -53,7 +53,7 @@ export const Hero: React.FC = () => {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-400 mb-2">35%+</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">20%+</div>
               <div className="text-gray-400">Energy Reduction</div>
             </div>
             <div className="text-center">

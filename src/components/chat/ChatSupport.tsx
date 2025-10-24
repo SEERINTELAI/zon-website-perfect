@@ -63,7 +63,7 @@ export const ChatSupport: React.FC = () => {
     const input = userInput.toLowerCase();
     
     if (input.includes('energy') || input.includes('consumption')) {
-      return 'ZON Energy™ can reduce your data center energy consumption by 35%+ through our AI-driven optimization technology. Would you like to schedule a demo to see the results?';
+      return 'ZON Energy™ can reduce your data center energy consumption by 20%+ through our AI-driven optimization technology. Would you like to schedule a demo to see the results?';
     }
     
     if (input.includes('cost') || input.includes('price') || input.includes('savings')) {
@@ -82,7 +82,7 @@ export const ChatSupport: React.FC = () => {
       return 'Hello! I\'m here to help you understand how ZON\'s AI technologies can transform your data center operations. What specific challenges are you facing?';
     }
     
-    return 'That\'s a great question! ZON specializes in AI-driven data center optimization and media processing. Our solutions reduce energy consumption by 35%+, cut costs by 50%+, and increase capacity by 40%. Would you like to learn more about a specific product or schedule a demo?';
+    return 'That\'s a great question! ZON specializes in AI-driven data center optimization and media processing. Our solutions reduce energy consumption by 20%+, cut costs by 50%+, and increase capacity by 40%. Would you like to learn more about a specific product or schedule a demo?';
   };
 
   return (

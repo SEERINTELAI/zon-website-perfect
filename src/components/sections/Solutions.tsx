@@ -27,11 +27,11 @@ export const Solutions: React.FC = () => {
         "Real-time performance monitoring and optimization",
         "Predictive maintenance with 99.7% accuracy",
         "Automated resource allocation and scaling",
-        "Energy consumption reduction up to 35%",
+        "Energy consumption reduction up to 20%",
         "24/7 intelligent system monitoring"
       ],
       benefits: [
-        { metric: "35%", label: "Energy Savings", color: "text-[#FF6826]" },
+        { metric: "20%", label: "Energy Savings", color: "text-[#FF6826]" },
         { metric: "50%", label: "Cost Reduction", color: "text-[#FFC06B]" },
         { metric: "99.9%", label: "Uptime", color: "text-[#CB2F19]" }
       ],

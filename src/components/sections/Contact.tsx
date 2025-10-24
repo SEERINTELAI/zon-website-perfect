@@ -117,7 +117,7 @@ export const Contact: React.FC = () => {
           <div className="text-center">
             <h2 className="text-3xl font-bold text-white mb-6">Get Started Today</h2>
             <p className="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
-              Our AI solutions have helped organizations achieve an average of 35% energy reduction 
+              Our AI solutions have helped organizations achieve an average of 20% energy reduction 
               and 50% cost savings. Let us show you what's possible for your infrastructure.
             </p>
           </div>

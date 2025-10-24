@@ -19,7 +19,7 @@ export const Products: React.FC = () => {
         "Applies most advanced adaptive AI to improve performance"
       ],
       metrics: [
-        { label: "Energy Reduction", value: "35%+", color: "text-[#FF6826]" },
+        { label: "Energy Reduction", value: "20%+", color: "text-[#FF6826]" },
         { label: "Cost Savings", value: "50%+", color: "text-[#FFC06B]" },
         { label: "Capacity Increase", value: "40%", color: "text-[#CB2F19]" }
       ],

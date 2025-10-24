@@ -223,7 +223,7 @@ const VideoLanding: React.FC = () => {
                 fontSize: 'clamp(1.5rem, 4.5vw, 2.75rem)',
                 lineHeight: '1.1',
                 textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)'
-              }}>35%+</div>
+              }}>20%+</div>
               <div className="text-white uppercase tracking-wider font-medium" style={{
                 fontSize: 'clamp(0.7rem, 1.4vw, 0.95rem)',
                 lineHeight: '1.3',
