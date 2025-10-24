@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Navbar } from './layout/Navbar';
-import heroVideo from '../assets/hero-video.mp4';
+import heroVideo from '../assets/hero-video.mov';
 import logoTransparent from '../assets/logo-transparent.png';
 
 const VideoLanding: React.FC = () => {
