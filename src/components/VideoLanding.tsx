@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Navbar } from './layout/Navbar';
+import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
 import heroVideo from '../assets/hero-video.mov';
 import logoTransparent from '../assets/logo-transparent.png';
 
@@ -11,7 +12,11 @@ const VideoLanding: React.FC = () => {
   const [hasVideoEnded, setHasVideoEnded] = useState(false);
   const [isReturnVisit, setIsReturnVisit] = useState(false);
   const [isReplaying, setIsReplaying] = useState(false);
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+  const [musicVolume, setMusicVolume] = useState(0.5);
+  const [isMusicMuted, setIsMusicMuted] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const audioRef = useRef<HTMLAudioElement>(null);
   const location = useLocation();
 
   // Check if this is a return visit and show content immediately
@@ -157,7 +162,7 @@ const VideoLanding: React.FC = () => {
           setShowContent(true);
           setShowNavigation(true);
         }}
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover z-10"
       />
       
       
@@ -172,7 +177,7 @@ const VideoLanding: React.FC = () => {
         </div>
       )}
       {/* Content Overlay - CENTERED POSITIONING */}
-      <div className="relative z-40 min-h-screen px-6 text-center text-white flex items-center justify-center">
+      <div className="relative z-20 min-h-screen px-6 text-center text-white flex items-center justify-center">
         {/* Main Content - MOBILE OPTIMIZED */}
         <div className={`transition-all ${isReplaying ? 'duration-0' : 'duration-[3000ms]'} ease-in-out ${
           showContent 
@@ -184,7 +189,7 @@ const VideoLanding: React.FC = () => {
           <h1 className="font-bold leading-tight tracking-wider uppercase text-center mb-8" style={{
             fontSize: 'clamp(0.875rem, 2.2vw, 1.75rem)',
             color: '#FFC06B',
-            textShadow: '0 2px 4px rgba(0, 0, 0, 0.5)',
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.53), 1px 1px 2px rgba(0, 0, 0, 0.53), 0px 0px 1px rgba(0, 0, 0, 0.53)',
             lineHeight: '1.2',
             wordSpacing: '0.1em'
           }}>
@@ -207,7 +212,7 @@ const VideoLanding: React.FC = () => {
           {/* Description - CENTERED */}
           <p className="text-white max-w-4xl mx-auto leading-relaxed text-center whitespace-pre-line" style={{
             fontSize: 'clamp(0.875rem, 2.2vw, 1.5rem)',
-            textShadow: '0 2px 4px rgba(0, 0, 0, 0.5)',
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.53), 1px 1px 2px rgba(0, 0, 0, 0.53), 0px 0px 1px rgba(0, 0, 0, 0.53)',
             lineHeight: '1.6',
             padding: '0 1rem'
           }}>
@@ -263,6 +268,62 @@ const VideoLanding: React.FC = () => {
             </button>
           </div>
         )}
+
+        {/* Music Player - Positioned under replay button */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 mt-20">
+          <div className="flex flex-col items-center space-y-4">
+            <div className="flex items-center space-x-4 bg-white/20 backdrop-blur-lg rounded-full px-6 py-3 border-2 border-white/40 shadow-lg">
+              {/* Play/Pause Button */}
+              <button
+                onClick={() => window.toggleMusic && window.toggleMusic()}
+                className="flex items-center justify-center w-12 h-12 bg-white hover:bg-gray-100 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg border-2 border-black/20"
+                aria-label={isMusicPlaying ? 'Pause music' : 'Play music'}
+              >
+                {isMusicPlaying ? (
+                  <Pause className="w-6 h-6 text-black" />
+                ) : (
+                  <Play className="w-6 h-6 text-black ml-1" />
+                )}
+              </button>
+
+              {/* Volume Control */}
+              <div className="flex items-center space-x-2">
+                <button
+                  onClick={() => window.toggleMute && window.toggleMute()}
+                  className="text-white hover:text-gray-300 transition-colors"
+                  aria-label={isMusicMuted ? 'Unmute' : 'Mute'}
+                >
+                  {isMusicMuted ? (
+                    <VolumeX className="w-5 h-5" />
+                  ) : (
+                    <Volume2 className="w-5 h-5" />
+                  )}
+                </button>
+                
+                <input
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.1"
+                  value={musicVolume}
+                  onChange={(e) => window.handleVolumeChange && window.handleVolumeChange(e)}
+                  className="w-20 h-2 bg-black/30 rounded-lg appearance-none cursor-pointer slider border border-white/30"
+                  style={{
+                    background: `linear-gradient(to right, #FFFFFF 0%, #FFFFFF ${musicVolume * 100}%, #1F2937 ${musicVolume * 100}%, #1F2937 100%)`,
+                    WebkitAppearance: 'none',
+                    MozAppearance: 'none',
+                    appearance: 'none',
+                    outline: 'none'
+                  }}
+                />
+              </div>
+            </div>
+            
+            <p className="text-white/90 text-sm font-medium">
+              {isMusicPlaying ? 'Music playing' : 'Click to play background music'}
+            </p>
+          </div>
+        </div>
       </div>
       {/* Loading State */}
       {!isVideoLoaded && (
@@ -271,6 +332,57 @@ const VideoLanding: React.FC = () => {
           <p className="text-white text-lg">Loading video...</p>
         </div>
       )}
+
+      {/* Music Player Functions */}
+      {(() => {
+        // Define functions in component scope
+        window.toggleMusic = () => {
+          if (audioRef.current) {
+            if (isMusicPlaying) {
+              audioRef.current.pause();
+              setIsMusicPlaying(false);
+            } else {
+              if (isMusicMuted) {
+                audioRef.current.muted = false;
+                setIsMusicMuted(false);
+              }
+              audioRef.current.play();
+              setIsMusicPlaying(true);
+            }
+          }
+        };
+
+        window.handleVolumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+          const newVolume = parseFloat(e.target.value);
+          setMusicVolume(newVolume);
+          if (audioRef.current) {
+            audioRef.current.volume = newVolume;
+          }
+        };
+
+        window.toggleMute = () => {
+          if (audioRef.current) {
+            audioRef.current.muted = !isMusicMuted;
+            setIsMusicMuted(!isMusicMuted);
+          }
+        };
+
+        return null;
+      })()}
+
+      {/* Hidden Audio Element */}
+      <audio
+        ref={audioRef}
+        loop
+        muted
+        preload="auto"
+        volume={musicVolume}
+      >
+        <source src="/audio/sample-music.wav" type="audio/wav" />
+        <source src="/audio/sample-music.mp3" type="audio/mpeg" />
+        <source src="/audio/sample-music.ogg" type="audio/ogg" />
+        Your browser doesn't support audio playback.
+      </audio>
       
     </div>
   );
