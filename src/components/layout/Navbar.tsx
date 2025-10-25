@@ -134,7 +134,7 @@ export const Navbar: React.FC = () => {
                      )}
                    </div>
                    
-                   <Link to="/solutions" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-white hover:text-gray-300 transition-colors font-medium cursor-pointer">Resources</Link>
+                   <Link to="/solutions" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-white hover:text-gray-300 transition-colors font-medium cursor-pointer">How We Work</Link>
                    <Link to="/about" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-white hover:text-gray-300 transition-colors font-medium cursor-pointer">About</Link>
                    <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-white hover:text-gray-300 transition-colors font-medium cursor-pointer">Contact</Link>
                  </div>
@@ -183,7 +183,7 @@ export const Navbar: React.FC = () => {
                      </div>
                    </div>
                    
-                   <Link to="/solutions" onClick={() => handleMobileNavClick('/solutions')} className="block px-3 py-3 text-white hover:text-gray-300 font-medium">Resources</Link>
+                   <Link to="/solutions" onClick={() => handleMobileNavClick('/solutions')} className="block px-3 py-3 text-white hover:text-gray-300 font-medium">How We Work</Link>
                    <Link to="/about" onClick={() => handleMobileNavClick('/about')} className="block px-3 py-3 text-white hover:text-gray-300 font-medium">About</Link>
                    <Link to="/contact" onClick={() => handleMobileNavClick('/contact')} className="block px-3 py-3 text-white hover:text-gray-300 font-medium">Contact</Link>
               

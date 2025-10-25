@@ -171,8 +171,8 @@ const VideoLanding: React.FC = () => {
           <Navbar />
         </div>
       )}
-      {/* Content Overlay - SIMPLE POSITIONING */}
-      <div className="relative z-40 min-h-screen px-6 text-center text-white pt-32">
+      {/* Content Overlay - CENTERED POSITIONING */}
+      <div className="relative z-40 min-h-screen px-6 text-center text-white flex items-center justify-center">
         {/* Main Content - MOBILE OPTIMIZED */}
         <div className={`transition-all ${isReplaying ? 'duration-0' : 'duration-[3000ms]'} ease-in-out ${
           showContent 
@@ -180,36 +180,34 @@ const VideoLanding: React.FC = () => {
             : 'opacity-0 scale-95'
         }`}>
           
-          {/* Tagline - FIXED POSITION */}
-          <h1 className="font-bold leading-tight tracking-wider uppercase text-center" style={{
+          {/* Tagline - CENTERED */}
+          <h1 className="font-bold leading-tight tracking-wider uppercase text-center mb-8" style={{
             fontSize: 'clamp(0.875rem, 2.2vw, 1.75rem)',
             color: '#FFC06B',
             textShadow: '0 2px 4px rgba(0, 0, 0, 0.5)',
-            marginTop: '100px',
             lineHeight: '1.2',
             wordSpacing: '0.1em'
           }}>
             ZON builds AI that makes AI better
           </h1>
 
-          {/* Logo - FIXED POSITION */}
-          <div className="flex justify-center" style={{ marginTop: '20px' }}>
+          {/* Logo - CENTERED */}
+          <div className="flex justify-center mb-8">
             <img
               src={logoTransparent}
               alt="ZON"
               className="w-auto"
               style={{
-                height: 'clamp(11.4rem, 20.5vw, 17.1rem)',
-                maxHeight: '79.8vh'
+                height: 'clamp(8rem, 15vw, 12rem)',
+                maxHeight: '50vh'
               }}
             />
           </div>
 
-          {/* Description - FIXED POSITION */}
+          {/* Description - CENTERED */}
           <p className="text-white max-w-4xl mx-auto leading-relaxed text-center whitespace-pre-line" style={{
             fontSize: 'clamp(0.875rem, 2.2vw, 1.5rem)',
             textShadow: '0 2px 4px rgba(0, 0, 0, 0.5)',
-            marginTop: '20px',
             lineHeight: '1.6',
             padding: '0 1rem'
           }}>
