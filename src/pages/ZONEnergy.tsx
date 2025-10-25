@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Battery, ArrowRight, Star, Zap, Database, CheckCircle, TrendingUp, Shield, Clock } from 'lucide-react';
+import { Battery, BatteryHigh, ArrowRight, Star, Zap, Database, CheckCircle, TrendingUp, Shield, Clock } from 'lucide-react';
 import { Navbar } from '../components/layout/Navbar';
 
 const ZONEnergy: React.FC = () => {
@@ -45,12 +45,15 @@ const ZONEnergy: React.FC = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-[#FF6826]/15 text-[#FF6826] px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <Battery className="w-4 h-4" />
+              <div className="relative w-4 h-4">
+                <Battery className="w-4 h-4 absolute" />
+                <div className="absolute top-0.5 left-0.5 w-3 h-3 bg-[#FF6826] rounded-sm"></div>
+              </div>
               Energy Optimization
             </div>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 px-8">
               <span className="text-white">ZON </span>
-              <span className="bg-gradient-to-r from-[#FF6826] to-[#FFC06B] bg-clip-text text-transparent">Energy</span><span className="bg-gradient-to-r from-[#FF6826] to-[#FFC06B] bg-clip-text text-transparent font-normal">™</span>
+              <span className="bg-gradient-to-r from-[#FF6826] to-[#FFC06B] bg-clip-text text-transparent">Energy ASI</span><span className="bg-gradient-to-r from-[#FF6826] to-[#FFC06B] bg-clip-text text-transparent font-normal">™</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto mb-8">
               Sustainable Power for Data Centers
@@ -96,7 +99,7 @@ const ZONEnergy: React.FC = () => {
           {/* How It Works */}
           <div className="mb-20">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">How ZON Energy Works</h2>
+              <h2 className="text-3xl font-bold mb-4">How ZON Energy ASI Works</h2>
               <p className="text-xl text-gray-300">Intelligent optimization through advanced AI</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -153,7 +156,7 @@ const ZONEnergy: React.FC = () => {
           <div className="text-center bg-gradient-to-r from-[#010214]/70 to-[#CB2F19]/35 p-12 rounded-2xl border border-[#CB2F19]/30">
             <h2 className="text-3xl font-bold mb-4">Ready to Optimize Your Energy Usage?</h2>
             <p className="text-xl text-[#EFE6D4]/80 mb-8 max-w-3xl mx-auto">
-              Join industry leaders who trust ZON Energy to reduce their energy consumption by 20%+ while maintaining peak performance.
+              Join industry leaders who trust ZON Energy ASI to reduce their energy consumption by 20%+ while maintaining peak performance.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link 

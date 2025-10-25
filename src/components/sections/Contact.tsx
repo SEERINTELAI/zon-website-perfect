@@ -72,56 +72,6 @@ export const Contact: React.FC = () => {
       {/* Navigation */}
       <Navbar />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-[#EFE6D4]">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-[#FF6826]/15 text-[#FF6826] px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <Mail className="w-4 h-4" />
-            Get In Touch
-          </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Let's
-            <span className="block text-[#FFC06B]">
-              Connect
-            </span>
-          </h1>
-          <p className="text-xl text-[#EFE6D4]/80 max-w-3xl mx-auto">Ready to revolutionize your business with AI? Contact our team of experts to discover how ZON can transform your operations and unlock unprecedented potential.</p>
-        </div>
-
-        {/* Why Choose ZON Section */}
-        <div className="mb-16">
-          <div className="bg-gradient-to-r from-[#010214]/70 to-[#CB2F19]/35 p-8 rounded-xl border border-[#CB2F19]/30">
-            <h3 className="text-2xl font-bold text-white mb-6 text-center">Why Choose ZON?</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                     <div className="text-center">
-                       <div className="text-3xl font-bold text-[#FF6826] mb-1">500+</div>
-                       <div className="text-gray-300 text-sm">Models Supported</div>
-                     </div>
-                     <div className="text-center">
-                       <div className="text-3xl font-bold text-[#FFC06B] mb-1">$2B+</div>
-                       <div className="text-[#EFE6D4]/70 text-sm">Savings</div>
-                     </div>
-                     <div className="text-center">
-                       <div className="text-3xl font-bold text-[#CB2F19] mb-1">95%</div>
-                       <div className="text-[#EFE6D4]/70 text-sm">Storage Savings</div>
-                     </div>
-                     <div className="text-center">
-                       <div className="text-3xl font-bold text-[#FFC06B] mb-1">Full</div>
-                       <div className="text-[#EFE6D4]/70 text-sm">Standards Compliance</div>
-                     </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Get Started Today Section */}
-        <div className="mb-16">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">Get Started Today</h2>
-            <p className="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
-              Our AI solutions have helped organizations achieve an average of 20% energy reduction 
-              and 50% cost savings. Let us show you what's possible for your infrastructure.
-            </p>
-          </div>
-        </div>
 
         <div className="max-w-4xl mx-auto">
 

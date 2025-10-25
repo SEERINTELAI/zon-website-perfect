@@ -206,55 +206,16 @@ const VideoLanding: React.FC = () => {
           </div>
 
           {/* Description - FIXED POSITION */}
-          <p className="text-white max-w-4xl mx-auto leading-relaxed text-center" style={{
+          <p className="text-white max-w-4xl mx-auto leading-relaxed text-center whitespace-pre-line" style={{
             fontSize: 'clamp(0.875rem, 2.2vw, 1.5rem)',
             textShadow: '0 2px 4px rgba(0, 0, 0, 0.5)',
             marginTop: '20px',
             lineHeight: '1.6',
             padding: '0 1rem'
           }}>
-            Revolutionary AI technology that transforms how businesses operate, optimize, and scale.
+            Revolutionary AI technology that transforms how businesses{'\n'}operate, optimize, and scale.
           </p>
 
-          {/* Statistics - FIXED POSITION */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12" style={{ marginTop: '20px', padding: '0 1rem' }}>
-            <div className="text-center">
-              <div className="font-bold text-[#FF6826] mb-3" style={{
-                fontSize: 'clamp(1.5rem, 4.5vw, 2.75rem)',
-                lineHeight: '1.1',
-                textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)'
-              }}>20%+</div>
-              <div className="text-white uppercase tracking-wider font-medium" style={{
-                fontSize: 'clamp(0.7rem, 1.4vw, 0.95rem)',
-                lineHeight: '1.3',
-                textShadow: '0 1px 1px rgba(0, 0, 0, 0.3)'
-              }}>ENERGY REDUCTION</div>
-            </div>
-            <div className="text-center">
-              <div className="font-bold text-[#FFC06B] mb-3" style={{
-                fontSize: 'clamp(1.5rem, 4.5vw, 2.75rem)',
-                lineHeight: '1.1',
-                textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)'
-              }}>50%+</div>
-              <div className="text-white uppercase tracking-wider font-medium" style={{
-                fontSize: 'clamp(0.7rem, 1.4vw, 0.95rem)',
-                lineHeight: '1.3',
-                textShadow: '0 1px 1px rgba(0, 0, 0, 0.3)'
-              }}>COST SAVINGS</div>
-            </div>
-            <div className="text-center">
-              <div className="font-bold text-[#CB2F19] mb-3" style={{
-                fontSize: 'clamp(1.5rem, 4.5vw, 2.75rem)',
-                lineHeight: '1.1',
-                textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)'
-              }}>40%</div>
-              <div className="text-white uppercase tracking-wider font-medium" style={{
-                fontSize: 'clamp(0.7rem, 1.4vw, 0.95rem)',
-                lineHeight: '1.3',
-                textShadow: '0 1px 1px rgba(0, 0, 0, 0.3)'
-              }}>CAPACITY INCREASE</div>
-            </div>
-          </div>
         </div>
 
 

@@ -115,7 +115,7 @@ export const Navbar: React.FC = () => {
                              }}
                              className="block px-4 py-3 text-white hover:bg-gray-800/50 transition-colors"
                            >
-                             <div className="font-semibold">ZON Energy™</div>
+                             <div className="font-semibold">ZON Energy ASI™</div>
                              <div className="text-sm text-gray-400">Sustainable power for data centers</div>
                            </Link>
                            <Link
@@ -126,7 +126,7 @@ export const Navbar: React.FC = () => {
                              }}
                              className="block px-4 py-3 text-white hover:bg-gray-800/50 transition-colors"
                            >
-                             <div className="font-semibold">SEER Intel Media™</div>
+                             <div className="font-semibold">Advanced Media Compression™</div>
                              <div className="text-sm text-gray-400">AI-powered data intelligence</div>
                            </Link>
                          </div>
@@ -178,8 +178,8 @@ export const Navbar: React.FC = () => {
                      <div className="text-white font-medium mb-2">Products</div>
                      <div className="ml-4 space-y-2">
                        <Link to="/products" onClick={() => handleMobileNavClick('/products')} className="block px-3 py-2 text-gray-300 hover:text-white text-sm">All Products</Link>
-                       <Link to="/products/zon-energy" onClick={() => handleMobileNavClick('/products/zon-energy')} className="block px-3 py-2 text-gray-300 hover:text-white text-sm">ZON Energy™</Link>
-                       <Link to="/products/seer-intel-media" onClick={() => handleMobileNavClick('/products/seer-intel-media')} className="block px-3 py-2 text-gray-300 hover:text-white text-sm">SEER Intel Media™</Link>
+                       <Link to="/products/zon-energy" onClick={() => handleMobileNavClick('/products/zon-energy')} className="block px-3 py-2 text-gray-300 hover:text-white text-sm">ZON Energy ASI™</Link>
+                       <Link to="/products/seer-intel-media" onClick={() => handleMobileNavClick('/products/seer-intel-media')} className="block px-3 py-2 text-gray-300 hover:text-white text-sm">Advanced Media Compression™</Link>
                      </div>
                    </div>
                    

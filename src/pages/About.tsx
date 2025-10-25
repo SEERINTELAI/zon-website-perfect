@@ -168,8 +168,8 @@ const About: React.FC = () => {
             <div>
               <h3 className="text-white font-semibold text-lg mb-4">Products</h3>
               <ul className="space-y-3">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">ZON Energy™</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">SEER Intel Media™</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">ZON Energy ASI™</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Advanced Media Compression™</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Solutions</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Pricing</a></li>
               </ul>

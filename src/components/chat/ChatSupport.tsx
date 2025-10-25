@@ -63,7 +63,7 @@ export const ChatSupport: React.FC = () => {
     const input = userInput.toLowerCase();
     
     if (input.includes('energy') || input.includes('consumption')) {
-      return 'ZON Energy™ can reduce your data center energy consumption by 20%+ through our AI-driven optimization technology. Would you like to schedule a demo to see the results?';
+      return 'ZON Energy ASI™ can reduce your data center energy consumption by 20%+ through our AI-driven optimization technology. Would you like to schedule a demo to see the results?';
     }
     
     if (input.includes('cost') || input.includes('price') || input.includes('savings')) {
@@ -71,7 +71,7 @@ export const ChatSupport: React.FC = () => {
     }
     
     if (input.includes('media') || input.includes('compression')) {
-      return 'SEER Intel Media™ achieves 90%+ file size reduction while enhancing media quality by 50%+. It\'s perfect for media companies and content platforms looking to optimize storage and delivery.';
+      return 'Advanced Media Compression™ achieves 90%+ file size reduction while enhancing media quality by 50%+. It\'s perfect for media companies and content platforms looking to optimize storage and delivery.';
     }
     
     if (input.includes('demo') || input.includes('trial')) {

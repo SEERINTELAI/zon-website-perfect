@@ -9,7 +9,7 @@ const SEERIntelMedia: React.FC = () => {
     "Intelligent content processing and optimization",
     "Real-time data insights",
     "Automated quality control",
-    "Multi-format compatibility",
+    "Works for audio, video and images",
     "Most advanced hybrid Deep Learning Compression available"
   ];
 
@@ -49,8 +49,8 @@ const SEERIntelMedia: React.FC = () => {
               AI-Powered Data Intelligence
             </div>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 px-8">
-              <span className="text-white">SEER Intel </span>
-              <span className="bg-gradient-to-r from-[#FF6826] to-[#FFC06B] bg-clip-text text-transparent">Media</span><span className="bg-gradient-to-r from-[#FF6826] to-[#FFC06B] bg-clip-text text-transparent font-normal">™</span>
+              <span className="text-white">Advanced </span>
+              <span className="bg-gradient-to-r from-[#FF6826] to-[#FFC06B] bg-clip-text text-transparent">Media Compression</span><span className="bg-gradient-to-r from-[#FF6826] to-[#FFC06B] bg-clip-text text-transparent font-normal">™</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto mb-8">
               AI-Powered Data Intelligence
@@ -96,7 +96,7 @@ const SEERIntelMedia: React.FC = () => {
           {/* How It Works */}
           <div className="mb-20">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">How SEER Intel Media Works</h2>
+              <h2 className="text-3xl font-bold mb-4">How Advanced Media Compression Works</h2>
               <p className="text-xl text-gray-300">Intelligent multimedia processing through advanced AI</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -127,7 +127,6 @@ const SEERIntelMedia: React.FC = () => {
           {/* Use Cases */}
           <div className="mb-20">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Perfect For</h2>
               <p className="text-xl text-gray-300">Ideal solutions for modern multimedia challenges</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -177,7 +176,7 @@ const SEERIntelMedia: React.FC = () => {
           <div className="text-center bg-gradient-to-r from-[#010214]/70 to-[#FFC06B]/35 p-12 rounded-2xl border border-[#FFC06B]/30">
             <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Media Processing?</h2>
             <p className="text-xl text-[#EFE6D4]/80 mb-8 max-w-3xl mx-auto">
-              Join industry leaders who trust SEER Intel Media to process multimedia content 10x faster with 99.7% accuracy.
+              Join industry leaders who trust Advanced Media Compression to process multimedia content 10x faster with 99.7% accuracy.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link 

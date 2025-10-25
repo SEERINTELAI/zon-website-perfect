@@ -10,8 +10,8 @@ export const Footer: React.FC = () => {
     {
       title: "Products",
       links: [
-        { name: "ZON Energy™", href: "#products" },
-        { name: "SEER Intel Media™", href: "#products" },
+        { name: "ZON Energy ASI™", href: "#products" },
+        { name: "Advanced Media Compression™", href: "#products" },
         { name: "Solutions", href: "#solutions" },
         { name: "Pricing", href: "#" }
       ]

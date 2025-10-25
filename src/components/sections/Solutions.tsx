@@ -19,7 +19,7 @@ import { Navbar } from '../layout/Navbar';
 export const Solutions: React.FC = () => {
   const solutions = [
     {
-      icon: <Settings className="w-12 h-12 text-[#FF6826]" />,
+      icon: <Settings className="w-6 h-6 text-[#FF6826]" />,
       title: "AI-Driven Infrastructure Optimization",
       category: "Smart Operations",
       description: "Revolutionize your data center operations with intelligent automation that continuously optimizes performance, reduces energy consumption, and prevents costly downtime.",
@@ -38,7 +38,7 @@ export const Solutions: React.FC = () => {
       gradient: "from-[#CB2F19]/15 to-[#FF6826]/25"
     },
     {
-      icon: <Shield className="w-12 h-12 text-[#CB2F19]" />,
+      icon: <Shield className="w-6 h-6 text-[#CB2F19]" />,
       title: "Advanced AI Security\n& Compliance",
       category: "Data Protection",
       description: "Protect your critical infrastructure with enterprise-grade security solutions powered by state-of-the-art AI threat detection, precision analytics, and automated compliance monitoring.",
@@ -57,7 +57,7 @@ export const Solutions: React.FC = () => {
       gradient: "from-[#FF6826]/20 to-[#FFC06B]/20"
     },
     {
-      icon: <TrendingUp className="w-12 h-12 text-[#FF6826]" />,
+      icon: <TrendingUp className="w-6 h-6 text-[#FF6826]" />,
       title: "Intelligent Analytics & Insights",
       category: "Business Intelligence",
       description: "Transform raw data into actionable insights with advanced analytics that drive strategic decisions and identify optimization opportunities.",
@@ -76,7 +76,7 @@ export const Solutions: React.FC = () => {
       gradient: "from-[#FF6826]/20 to-[#FFC06B]/20"
     },
     {
-      icon: <Cloud className="w-12 h-12 text-[#FFC06B]" />,
+      icon: <Cloud className="w-6 h-6 text-[#FFC06B]" />,
       title: "Hybrid Cloud Management",
       category: "Cloud Solutions",
       description: "Seamlessly manage multi-cloud and hybrid environments with unified control, automated optimization, and intelligent workload distribution.",
@@ -147,14 +147,11 @@ export const Solutions: React.FC = () => {
             >
               <div className="relative p-8 z-10">
                 {/* Header */}
-                <div className="flex items-start gap-6 mb-6">
+                <div className="flex items-center gap-6 mb-6">
                   <div className="flex-shrink-0 p-3 bg-gray-900/50 rounded-xl border border-gray-700">
                     {solution.icon}
                   </div>
                   <div className="flex-1">
-                    <div className="text-sm text-gray-400 font-medium mb-2">
-                      {solution.category}
-                    </div>
                     <h3 className="text-2xl font-bold text-white mb-3">
                       {solution.title}
                     </h3>

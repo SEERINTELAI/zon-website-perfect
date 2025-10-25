@@ -6,8 +6,13 @@ import { Navbar } from '../layout/Navbar';
 export const Products: React.FC = () => {
   const products = [
     {
-      icon: <Battery className="w-12 h-12 text-[#FF6826]" />,
-      name: "ZON Energy™",
+      icon: (
+        <div className="relative w-12 h-12">
+          <Battery className="w-12 h-12 absolute" />
+          <div className="absolute top-1.5 left-1.5 w-9 h-9 bg-[#FF6826] rounded-sm"></div>
+        </div>
+      ),
+      name: "ZON Energy ASI™",
       tagline: "Sustainable Power for Data Centers",
       description: "Self-optimizing AI-driven operational and energy efficiency technologies that perform beyond all currently available market standards and technologies.",
       features: [
@@ -27,7 +32,7 @@ export const Products: React.FC = () => {
     },
     {
       icon: <Film className="w-12 h-12 text-[#FF6826]" />,
-      name: "SEER Intel Media™",
+      name: "Advanced Media Compression™",
       tagline: "AI-Powered Data Intelligence",
       description: "Advanced multimedia data center optimization platform powered by the latest advances in AI, media and computer vision techniques.",
       features: [
@@ -35,7 +40,7 @@ export const Products: React.FC = () => {
         "Intelligent content processing and optimization",
         "Real-time data insights",
         "Automated quality control",
-        "Multi-format compatibility",
+        "Works for audio, video and images",
         "Most advanced hybrid Deep Learning Compression available"
       ],
       metrics: [
