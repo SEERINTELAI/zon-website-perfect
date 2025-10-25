@@ -33,16 +33,10 @@ const About: React.FC = () => {
               </div>
               <div className="space-y-6">
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  AI's rapid evolution creates a paradox: each advancement demands more energy, more infrastructure, more resources at an ever-accelerating pace. At ZON, we've stepped back from this to take a different approach and build something different—AI that makes AI better.
+                  At ZON, we use Artificial Intelligence to reduce global energy consumption massively and build a smarter, more sustainable world.
                 </p>
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  Our patented technologies don't just participate in the AI revolution; they act as a lever that amplifies what's possible. We've developed tools that multiply the efficiencies and effectiveness of existing AI systems across their entire lifecycle—from the data centers that train and support AI to the applications that are used to deploy it. The result is exponential gains in energy efficiency and operational performance, without compromising utility.
-                </p>
-                <p className="text-lg text-gray-300 leading-relaxed">
-                  This isn't about choosing between capability and sustainability. It's about building intelligence that compounds itself—where every breakthrough in AI accelerates through our technology, becoming more efficient, more accessible, more practical. As AI continues its accelerated evolution, we've designed our approach to ride that wave: the faster AI advances, the more our leverage matters.
-                </p>
-                <p className="text-lg text-gray-300 leading-relaxed">
-                  We're solving for a moving target. And we're built on technologies designed to keep pace.
+                  As an AI company for good, we believe technology should empower humanity—helping dreamers and innovators turn imagination into progress. Together, we're creating a cleaner, safer future where AI and humanity thrive side by side.
                 </p>
               </div>
             </div>
